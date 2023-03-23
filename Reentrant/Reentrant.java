@@ -22,7 +22,8 @@ class Runner {
         lock.lock();
 
         System.out.println("Waiting...");
-        condition.await();
+//        condition.await();
+        Thread.sleep(10000);
         System.out.println("Woken up!");
 
         increment();
@@ -38,7 +39,7 @@ class Runner {
         new Scanner(System.in).nextLine();
         System.out.println("Gotcha!");
 
-        condition.signal();
+//        condition.signal();
 
         increment();
 

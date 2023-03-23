@@ -49,6 +49,5 @@ public class InterThreadCommunication {
             }
         }.start();
 
-        System.out.println("finished");
     }
 }
