@@ -9,7 +9,7 @@ public class Deadlock {
         Student student1 = new Student();
         Student student2 = new Student();
 
-        Thread thread1 = new Thread() {
+        Thread thread1 = new Thread("MyThread1") {
             @Override
             public void run() {
                 synchronized (student1) {
@@ -33,7 +33,7 @@ public class Deadlock {
             }
         };
 
-        Thread thread2 = new Thread(){
+        Thread thread2 = new Thread("MyThread2"){
             @Override
             public void run() {
                 synchronized (student2) {

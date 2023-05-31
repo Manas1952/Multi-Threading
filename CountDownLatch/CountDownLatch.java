@@ -25,7 +25,7 @@ class Worker extends Thread {
 
 public class CountDownLatch {
     public static void main(String[] args) {
-        java.util.concurrent.CountDownLatch countDownLatch = new java.util.concurrent.CountDownLatch(3);
+        java.util.concurrent.CountDownLatch countDownLatch = new java.util.concurrent.CountDownLatch(2);
 
         Thread thread1 = new Thread(new Worker(1000, countDownLatch, "thread1"));
         Thread thread2 = new Thread(new Worker(2000, countDownLatch, "thread2"));

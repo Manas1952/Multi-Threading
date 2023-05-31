@@ -1,4 +1,4 @@
-package org.example;
+package org.example.ThreadGroup;
 
 class MyThread2 extends Thread {
     MyThread2(java.lang.ThreadGroup threadGroup, String groupName) {
